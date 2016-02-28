@@ -270,12 +270,12 @@ if __name__ == '__main__':
 		print 'Запаковываем...'
 
 		if not os.path.exists(args.d):
-			print('Директории "\%s\", для упаковки не найдено' % (self.current_dir, ))
-			return
+			print('[E] Директории "\%s\", для упаковки не найдено' % (args.d, ))
+			sys.exit(1)
 
 		if os.path.isfile(args.f):
-			print('Файл "%s" уже существует' % (args.f, ))
-			return
+			print('[E] Файл "%s" уже существует' % (args.f, ))
+			sys.exit(1)
 
 		s = dirPack(args.f)
 		s.pack(args.d)
