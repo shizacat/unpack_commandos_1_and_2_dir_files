@@ -161,10 +161,7 @@ class dirPack(object):
 		files = []
 		dirs = []
 
-		print '>>>>>', d
-
 		for f in os.listdir(d):
-			print f
 			if os.path.isfile( os.path.join(d,f)):
 				files.append(f)
 			else:
