@@ -276,9 +276,3 @@ if __name__ == '__main__':
 
 		s = dirPack(args.f)
 		s.pack(args.d)
-
-
-
-
-
-
